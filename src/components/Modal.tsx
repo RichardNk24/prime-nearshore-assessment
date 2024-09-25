@@ -19,7 +19,8 @@ interface ModalProps {
             </p>
             <button
             onClick={onClose}
-            className="block mx-auto px-4 py-2 bg-PrimeNearshore text-white rounded-full shadow-lg hover:bg-PrimeNearshoreHover transition duration-300"
+            className="block mx-auto px-4 py-2 bg-PrimeNearshore text-white 
+            rounded-full shadow-lg hover:bg-PrimeNearshoreHover transition duration-300"
             >
             Get Started
             </button>

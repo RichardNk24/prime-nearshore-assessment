@@ -12,7 +12,8 @@ const Filter: React.FC<FilterProps> = ({ label, options, selectedOption, onChang
     <div className="flex flex-col">
       <label className="mb-2 text-gray-700 font-bold">{label}</label>
       <select
-        className="p-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-PrimeNearshoreLighter"
+        className="p-2 border rounded-lg shadow-sm focus:outline-none 
+        focus:ring-2 focus:ring-PrimeNearshoreLighter"
         value={selectedOption}
         onChange={(e) => onChange(e.target.value)}
       >
