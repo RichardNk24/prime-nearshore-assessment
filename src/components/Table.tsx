@@ -52,7 +52,7 @@ const Table: React.FC<TableProps> = ({ data, onSort, styleType }) => {
 
   return (
     <div className="relative overflow-hidden">
-      <div className="relative overflow-y-auto max-h-80">
+      <div className="relative overflow-y-auto max-h-80 mt-[-7px]">
         <table className={`min-w-full border-collapse ${styleType === 'zebra' ? 'table-auto' : 'border border-gray-300 bg-white'}`}>
           <thead className="bg-gray-100 sticky top-0 z-10 shadow-sm">
             <tr>
