@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { MdOutlineArrowCircleRight, MdOutlineArrowCircleLeft, MdOutlineArrowCircleUp, MdOutlineArrowCircleDown } from 'react-icons/md';
+import { MdOutlineArrowCircleRight, 
+  MdOutlineArrowCircleLeft, 
+  MdOutlineArrowCircleUp, 
+  MdOutlineArrowCircleDown } from 'react-icons/md';
 import { LuArrowDownUp } from "react-icons/lu";
 
 interface Car {
@@ -96,7 +99,8 @@ const Table: React.FC<TableProps> = ({ data, onSort, styleType }) => {
             {data.map((row) => (
               <React.Fragment key={row.id}>
                 <tr
-                  className={`${styleType === 'zebra' ? 'even:bg-gray-50 odd:bg-white' : ''} hover:bg-gray-100 focus:bg-indigo-100 transform transition-transform duration-300 hover:scale-102`}
+                  className={`${styleType === 'zebra' ? 'even:bg-gray-50 odd:bg-white' : ''}
+                    hover:bg-gray-100 focus:bg-indigo-100 transform transition-transform duration-300 hover:scale-102`}
                 >
                   <td className="border border-gray-300 p-4">
                     {row.category}

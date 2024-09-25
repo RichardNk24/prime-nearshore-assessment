@@ -22,6 +22,7 @@ interface Car {
 }
 
 const retrieveData = async (): Promise<Car[]> => {
+  // Simulate network latency
   await new Promise((resolve) => setTimeout(resolve, 500));
   const data = await import('./cars.json');
   return data.default;
@@ -38,7 +39,8 @@ const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(true);
 
   const carsPerPage = 10;
-  const totalPages = Math.ceil(filteredData.length / carsPerPage);
+
+  const totalPages = Math.ceil(data.length / carsPerPage);
 
   const makes = ['All', ...new Set(data.map((item) => item.make))];
   const transmissions = ['All', ...new Set(data.map((item) => item.transmission))];
@@ -93,7 +95,7 @@ const App: React.FC = () => {
       direction = 'descending';
     }
 
-    const sortedData = [...filteredData].sort((a, b) => {
+    const sortedData = [...data].sort((a, b) => {
       if (key === 'year') {
         return direction === 'ascending' ? b[key] - a[key] : a[key] - b[key];
       } else {
@@ -110,7 +112,7 @@ const App: React.FC = () => {
       }
     });
 
-    setFilteredData(sortedData);
+    setFilteredData(sortedData.slice((currentPage - 1) * carsPerPage, currentPage * carsPerPage));
     setSortConfig({ key, direction });
     setCurrentPage(1);
   };
@@ -145,8 +147,7 @@ const App: React.FC = () => {
         </div>
 
         <button
-          className="mb-4 px-4 py-2 bg-PrimeNearshore text-white rounded-3xl 
-          shadow hover:bg-PrimeNearshoreHover transition duration-300"
+          className="mb-4 px-4 py-2 bg-PrimeNearshore text-white rounded-3xl shadow hover:bg-PrimeNearshoreHover transition duration-300"
           onClick={toggleStyle}
         >
           Toggle Style
@@ -161,8 +162,7 @@ const App: React.FC = () => {
 
         <div className="flex justify-between items-center mt-4">
           <button
-            className="px-4 py-2 bg-PrimeNearshore hover:cursor-pointer text-white rounded-3xl 
-            shadow hover:bg-PrimeNearshoreHover transition duration-300"
+            className="px-4 py-2 bg-PrimeNearshore hover:cursor-pointer text-white rounded-3xl shadow hover:bg-PrimeNearshoreHover transition duration-300"
             onClick={goToPreviousPage}
             disabled={currentPage === 1}
           >
@@ -172,8 +172,7 @@ const App: React.FC = () => {
             Page {currentPage} of {totalPages}
           </span>
           <button
-            className="px-4 py-2 bg-PrimeNearshore hover:cursor-pointer text-white rounded-3xl 
-            shadow hover:bg-PrimeNearshoreHover transition duration-300"
+            className="px-4 py-2 bg-PrimeNearshore hover:cursor-pointer text-white rounded-3xl shadow hover:bg-PrimeNearshoreHover transition duration-300"
             onClick={goToNextPage}
             disabled={currentPage === totalPages}
           >
