@@ -116,7 +116,7 @@ const App: React.FC = () => {
     <div className="relative">
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <div className={`container mx-auto p-4 ${isModalOpen ? 'blur-sm' : ''}`}>
-        <h1 className="text-3xl font-bold mb-4 text-PrimeNearshore">Vehicles Data Table</h1>
+        <h1 className="text-3xl font-bold mb-4 text-PrimeNearshore">Richard Nkulu Application</h1>
 
         <div className="flex flex-col md:flex-row gap-4 mb-4">
           <Filter 
