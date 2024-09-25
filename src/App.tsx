@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Table from './components/Table';
 import Modal from './components/Modal';
 import Filter from './components/Filter';
-import carsData from './cars.json';
 
 interface Car {
   id: number;
@@ -22,9 +21,15 @@ interface Car {
   };
 }
 
+const retrieveData = async (): Promise<Car[]> => {
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  const data = await import('./cars.json');
+  return data.default;
+};
+
 const App: React.FC = () => {
-  const [data, setData] = useState<Car[]>(carsData);
-  const [filteredData, setFilteredData] = useState(data.slice(0, 10));
+  const [data, setData] = useState<Car[]>([]);
+  const [filteredData, setFilteredData] = useState<Car[]>([]);
   const [selectedMake, setSelectedMake] = useState('All');
   const [selectedTransmission, setSelectedTransmission] = useState('All');
   const [styleType, setStyleType] = useState('zebra');
@@ -33,17 +38,28 @@ const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(true);
 
   const carsPerPage = 10;
-  const totalPages = Math.ceil(data.length / carsPerPage);
+  const totalPages = Math.ceil(filteredData.length / carsPerPage);
 
   const makes = ['All', ...new Set(data.map((item) => item.make))];
   const transmissions = ['All', ...new Set(data.map((item) => item.transmission))];
 
   useEffect(() => {
+    const loadData = async () => {
+      const fetchedData = await retrieveData();
+      setData(fetchedData);
+      setFilteredData(fetchedData.slice(0, carsPerPage));
+    };
+
+    loadData();
+  }, []);
+
+  useEffect(() => {
     setFilteredData(data.slice((currentPage - 1) * carsPerPage, currentPage * carsPerPage));
   }, [data, currentPage]);
 
-  const retrieveData = (make: string, transmission: string) => {
-    let newData = carsData;
+  const filterData = async (make: string, transmission: string) => {
+    const fetchedData = await retrieveData();
+    let newData = fetchedData;
 
     if (make !== 'All') {
       newData = newData.filter((item) => item.make === make);
@@ -53,11 +69,6 @@ const App: React.FC = () => {
       newData = newData.filter((item) => item.transmission === transmission);
     }
 
-    return newData;
-  };
-
-  const filterData = (make: string, transmission: string) => {
-    const newData = retrieveData(make, transmission);
     setData(newData);
     setCurrentPage(1);
   };
@@ -82,7 +93,7 @@ const App: React.FC = () => {
       direction = 'descending';
     }
 
-    const sortedData = [...data].sort((a, b) => {
+    const sortedData = [...filteredData].sort((a, b) => {
       if (key === 'year') {
         return direction === 'ascending' ? b[key] - a[key] : a[key] - b[key];
       } else {
@@ -99,9 +110,9 @@ const App: React.FC = () => {
       }
     });
 
-    setData(sortedData);
+    setFilteredData(sortedData);
     setSortConfig({ key, direction });
-    setCurrentPage(1); 
+    setCurrentPage(1);
   };
 
   const goToNextPage = () => {
@@ -134,7 +145,8 @@ const App: React.FC = () => {
         </div>
 
         <button
-          className="mb-4 px-4 py-2 bg-PrimeNearshore text-white rounded-3xl shadow hover:bg-PrimeNearshoreHover transition duration-300"
+          className="mb-4 px-4 py-2 bg-PrimeNearshore text-white rounded-3xl 
+          shadow hover:bg-PrimeNearshoreHover transition duration-300"
           onClick={toggleStyle}
         >
           Toggle Style
@@ -149,7 +161,8 @@ const App: React.FC = () => {
 
         <div className="flex justify-between items-center mt-4">
           <button
-            className="px-4 py-2 bg-PrimeNearshore hover:cursor-pointer text-white rounded-3xl shadow hover:bg-PrimeNearshoreHover transition duration-300"
+            className="px-4 py-2 bg-PrimeNearshore hover:cursor-pointer text-white rounded-3xl 
+            shadow hover:bg-PrimeNearshoreHover transition duration-300"
             onClick={goToPreviousPage}
             disabled={currentPage === 1}
           >
@@ -159,7 +172,8 @@ const App: React.FC = () => {
             Page {currentPage} of {totalPages}
           </span>
           <button
-            className="px-4 py-2 bg-PrimeNearshore hover:cursor-pointer text-white rounded-3xl shadow hover:bg-PrimeNearshoreHover transition duration-300"
+            className="px-4 py-2 bg-PrimeNearshore hover:cursor-pointer text-white rounded-3xl 
+            shadow hover:bg-PrimeNearshoreHover transition duration-300"
             onClick={goToNextPage}
             disabled={currentPage === totalPages}
           >
