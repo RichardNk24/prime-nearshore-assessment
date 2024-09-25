@@ -1,0 +1,679 @@
+[
+  {
+    "id": 1,
+    "model": "Urus",
+    "make": "Lamborghini",
+    "year": 2017,
+    "transmission": "Automatic",
+    "category": "SUV",
+    "country_of_origin": "Italy",
+    "city": "Milano",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "1.6L I4",
+      "horsepower": "215 HP",
+      "torque": "210 lb-ft"
+    }
+  },
+  {
+    "id": 2,
+    "model": "Cayenne Turbo",
+    "make": "Porsche",
+    "year": 2018,
+    "transmission": "Automatic",
+    "category": "SUV",
+    "country_of_origin": "Germany",
+    "city": "Berlin",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "3.2L I4",
+      "horsepower": "200 HP",
+      "torque": "200 lb-ft"
+    }
+  },
+  {
+    "id": 3,
+    "model": "Durango SRT",
+    "make": "Dodge",
+    "year": 2018,
+    "transmission": "Automatic",
+    "category": "SUV",
+    "country_of_origin": "USA",
+    "city": "los Angeles",
+    "price_range": "$50k-$70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "1.6L I4",
+      "horsepower": "215 HP",
+      "torque": "210 lb-ft"
+    }
+  },
+  {
+    "id": 4,
+    "model": "Juke Nismo RS",
+    "make": "Nissan",
+    "year": 2014,
+    "transmission": "Manual",
+    "category": "Crossover",
+    "country_of_origin": "Japan",
+    "city": "Osaka",
+    "price_range": "< $30k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "1.6L I4",
+      "horsepower": "215 HP",
+      "torque": "210 lb-ft"
+    }
+  },
+  {
+    "id": 5,
+    "model": "Escalade ESV",
+    "make": "Cadillac",
+    "year": 2012,
+    "transmission": "Automatic",
+    "category": "SUV",
+    "country_of_origin": "USA",
+    "city": "Chicago",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "1.6L I4",
+      "horsepower": "215 HP",
+      "torque": "210 lb-ft"
+    }
+  },
+  {
+    "id": 6,
+    "model": "Levante S",
+    "make": "Maserati",
+    "year": 2017,
+    "transmission": "Automatic",
+    "category": "SUV",
+    "country_of_origin": "Italy",
+    "city": "Turin",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "1.6L I4",
+      "horsepower": "215 HP",
+      "torque": "210 lb-ft"
+    }
+  },
+  {
+    "id": 7,
+    "model": "Model S",
+    "make": "Tesla",
+    "year": 2019,
+    "transmission": "Automatic",
+    "category": "Sedan",
+    "country_of_origin": "USA",
+    "city": "New York",
+    "price_range": "> $70k",
+    "fuel_type": "Electric",
+    "details": {
+      "engine": "1.6L I4",
+      "horsepower": "215 HP",
+      "torque": "210 lb-ft"
+    }
+  },
+  {
+    "id": 8,
+    "model": "Mustang",
+    "make": "Ford",
+    "year": 2015,
+    "transmission": "Manual",
+    "category": "Coupe",
+    "country_of_origin": "USA",
+    "city": "Miami",
+    "price_range": "$50k-$70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "1.6L I4",
+      "horsepower": "215 HP",
+      "torque": "210 lb-ft"
+    }
+  },
+  {
+    "id": 9,
+    "model": "Civic Type R",
+    "make": "Honda",
+    "year": 2018,
+    "transmission": "Manual",
+    "category": "Hatchback",
+    "country_of_origin": "Japan",
+    "city": "Tokyo",
+    "price_range": "$30k-$50k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "1.6L I4",
+      "horsepower": "215 HP",
+      "torque": "210 lb-ft"
+    }
+  },
+  {
+    "id": 10,
+    "model": "Camaro ZL1",
+    "make": "Chevrolet",
+    "year": 2017,
+    "transmission": "Manual",
+    "category": "Coupe",
+    "country_of_origin": "USA",
+    "city": "Seattle",
+    "price_range": "$50k-$70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "1.6L I4",
+      "horsepower": "215 HP",
+      "torque": "210 lb-ft"
+    }
+  },
+  {
+    "id": 11,
+    "model": "G-Class",
+    "make": "Mercedes-Benz",
+    "year": 2020,
+    "transmission": "Automatic",
+    "category": "SUV",
+    "country_of_origin": "Germany",
+    "city": "Berlin",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "1.6L I4",
+      "horsepower": "215 HP",
+      "torque": "210 lb-ft"
+    }
+  },
+  {
+    "id": 12,
+    "model": "X5 M",
+    "make": "BMW",
+    "year": 2019,
+    "transmission": "Automatic",
+    "category": "SUV",
+    "country_of_origin": "Germany",
+    "city": "Cologne",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "1.6L I4",
+      "horsepower": "215 HP",
+      "torque": "210 lb-ft"
+    }
+  },
+  {
+    "id": 13,
+    "model": "911 Turbo",
+    "make": "Porsche",
+    "year": 2018,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "Germany",
+    "city": "Berlin",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.2L V8",
+      "horsepower": "403 HP",
+      "torque": "417 lb-ft"
+    }
+  },
+  {
+    "id": 14,
+    "model": "Aventador",
+    "make": "Lamborghini",
+    "year": 2016,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "Italy",
+    "city": "Roma",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.2L V8",
+      "horsepower": "403 HP",
+      "torque": "417 lb-ft"
+    }
+  },
+  {
+    "id": 15,
+    "model": "Chiron",
+    "make": "Bugatti",
+    "year": 2017,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "France",
+    "city": "Paris",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.2L V8",
+      "horsepower": "403 HP",
+      "torque": "417 lb-ft"
+    }
+  },
+  {
+    "id": 16,
+    "model": "LaFerrari",
+    "make": "Ferrari",
+    "year": 2015,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "Italy",
+    "city": "Naples",
+    "price_range": "> $70k",
+    "fuel_type": "Hybrid",
+    "details": {
+      "engine": "6.2L V8",
+      "horsepower": "403 HP",
+      "torque": "417 lb-ft"
+    }
+  },
+  {
+    "id": 17,
+    "model": "Veyron",
+    "make": "Bugatti",
+    "year": 2013,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "France",
+    "city": "Bordeaux",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.2L V8",
+      "horsepower": "403 HP",
+      "torque": "417 lb-ft"
+    }
+  },
+  {
+    "id": 18,
+    "model": "Corvette Z06",
+    "make": "Chevrolet",
+    "year": 2019,
+    "transmission": "Manual",
+    "category": "Coupe",
+    "country_of_origin": "USA",
+    "city": "Chicago",
+    "price_range": "$50k-$70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.2L V8",
+      "horsepower": "403 HP",
+      "torque": "417 lb-ft"
+    }
+  },
+  {
+    "id": 19,
+    "model": "R8",
+    "make": "Audi",
+    "year": 2017,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "Germany",
+    "city": "Cologne",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.2L V8",
+      "horsepower": "403 HP",
+      "torque": "417 lb-ft"
+    }
+  },
+  {
+    "id": 20,
+    "model": "GT-R",
+    "make": "Nissan",
+    "year": 2020,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "Japan",
+    "city": "Tokyo",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.2L V8",
+      "horsepower": "403 HP",
+      "torque": "417 lb-ft"
+    }
+  },
+  {
+    "id": 21,
+    "model": "Huracan",
+    "make": "Lamborghini",
+    "year": 2018,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "Italy",
+    "city": "Roma",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.2L V8",
+      "horsepower": "403 HP",
+      "torque": "417 lb-ft"
+    }
+  },
+  {
+    "id": 22,
+    "model": "DB11",
+    "make": "Aston Martin",
+    "year": 2019,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "UK",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.2L V8",
+      "horsepower": "403 HP",
+      "torque": "417 lb-ft"
+    }
+  },
+  {
+    "id": 23,
+    "model": "F-Type",
+    "make": "Jaguar",
+    "year": 2018,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "UK",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.2L V8",
+      "horsepower": "403 HP",
+      "torque": "417 lb-ft"
+    }
+  },
+  {
+    "id": 24,
+    "model": "Challenger SRT",
+    "make": "Dodge",
+    "year": 2016,
+    "transmission": "Manual",
+    "category": "Coupe",
+    "country_of_origin": "USA",
+    "city": "Portland",
+    "price_range": "$50k-$70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.2L V8",
+      "horsepower": "403 HP",
+      "torque": "417 lb-ft"
+    }
+  },
+  {
+    "id": 25,
+    "model": "Wrangler Rubicon",
+    "make": "Jeep",
+    "year": 2019,
+    "transmission": "Manual",
+    "category": "SUV",
+    "country_of_origin": "USA",
+    "city": "Washington",
+    "price_range": "$50k-$70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.2L V8",
+      "horsepower": "403 HP",
+      "torque": "417 lb-ft"
+    }
+  },
+  {
+    "id": 26,
+    "model": "Range Rover",
+    "make": "Land Rover",
+    "year": 2020,
+    "transmission": "Automatic",
+    "category": "SUV",
+    "country_of_origin": "UK",
+    "price_range": "> $70k",
+    "fuel_type": "Diesel",
+    "details": {
+      "engine": "6.4L V8",
+      "horsepower": "475 HP",
+      "torque": "470 lb-ft"
+    }
+  },
+  {
+    "id": 27,
+    "model": "C-Class",
+    "make": "Mercedes-Benz",
+    "year": 2018,
+    "transmission": "Automatic",
+    "category": "Sedan",
+    "country_of_origin": "Germany",
+    "city": "Cologne",
+    "price_range": "$50k-$70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.4L V8",
+      "horsepower": "475 HP",
+      "torque": "470 lb-ft"
+    }
+  },
+  {
+    "id": 28,
+    "model": "A6",
+    "make": "Audi",
+    "year": 2017,
+    "transmission": "Automatic",
+    "category": "Sedan",
+    "country_of_origin": "Germany",
+    "city": "Munich",
+    "price_range": "$50k-$70k",
+    "fuel_type": "Diesel",
+    "details": {
+      "engine": "6.4L V8",
+      "horsepower": "475 HP",
+      "torque": "470 lb-ft"
+    }
+  },
+  {
+    "id": 29,
+    "model": "3 Series",
+    "make": "BMW",
+    "year": 2019,
+    "transmission": "Automatic",
+    "category": "Sedan",
+    "country_of_origin": "Germany",
+    "city": "Munich",
+    "price_range": "$50k-$70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.4L V8",
+      "horsepower": "475 HP",
+      "torque": "470 lb-ft"
+    }
+  },
+  {
+    "id": 30,
+    "model": "RS7",
+    "make": "Audi",
+    "year": 2020,
+    "transmission": "Automatic",
+    "category": "Sedan",
+    "country_of_origin": "Germany",
+    "city": "Munich",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.4L V8",
+      "horsepower": "475 HP",
+      "torque": "470 lb-ft"
+    }
+  },
+  {
+    "id": 31,
+    "model": "Q7",
+    "make": "Audi",
+    "year": 2019,
+    "transmission": "Automatic",
+    "category": "SUV",
+    "country_of_origin": "Germany",
+    "city": "Munich",
+    "price_range": "> $70k",
+    "fuel_type": "Diesel",
+    "details": {
+      "engine": "6.4L V8",
+      "horsepower": "475 HP",
+      "torque": "470 lb-ft"
+    }
+  },
+  {
+    "id": 32,
+    "model": "F150 Raptor",
+    "make": "Ford",
+    "year": 2018,
+    "transmission": "Automatic",
+    "category": "Truck",
+    "country_of_origin": "USA",
+    "city": "Denver",
+    "price_range": "$50k-$70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.4L V8",
+      "horsepower": "475 HP",
+      "torque": "470 lb-ft"
+    }
+  },
+  {
+    "id": 33,
+    "model": "Model 3",
+    "make": "Tesla",
+    "year": 2020,
+    "transmission": "Automatic",
+    "category": "Sedan",
+    "country_of_origin": "USA",
+    "city": "Honolulu",
+    "price_range": "$50k-$70k",
+    "fuel_type": "Electric",
+    "details": {
+      "engine": "6.4L V8",
+      "horsepower": "475 HP",
+      "torque": "470 lb-ft"
+    }
+  },
+  {
+    "id": 34,
+    "model": "X6",
+    "make": "BMW",
+    "year": 2020,
+    "transmission": "Automatic",
+    "category": "SUV",
+    "country_of_origin": "Germany",
+    "city": "Cologne",
+    "price_range": "> $70k",
+    "fuel_type": "Diesel",
+    "details": {
+      "engine": "6.4L V8",
+      "horsepower": "475 HP",
+      "torque": "470 lb-ft"
+    }
+  },
+  {
+    "id": 35,
+    "model": "Aventador SVJ",
+    "make": "Lamborghini",
+    "year": 2019,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "Italy",
+    "city": "Turin",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "6.4L V8",
+      "horsepower": "475 HP",
+      "torque": "470 lb-ft"
+    }
+  },
+  {
+    "id": 36,
+    "model": "GT",
+    "make": "Ford",
+    "year": 2017,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "USA",
+    "city": "Austin",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "4.0L V8",
+      "horsepower": "541 HP",
+      "torque": "567 lb-ft"
+    }
+  },
+  {
+    "id": 37,
+    "model": "Cayman",
+    "make": "Porsche",
+    "year": 2018,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "Germany",
+    "city": "Berlin",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "4.0L V8",
+      "horsepower": "541 HP",
+      "torque": "567 lb-ft"
+    }
+  },
+  {
+    "id": 38,
+    "model": "Supra",
+    "make": "Toyota",
+    "year": 2019,
+    "transmission": "Automatic",
+    "category": "Coupe",
+    "country_of_origin": "Japan",
+    "city": "Tokyo",
+    "price_range": "$50k-$70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "4.0L V8",
+      "horsepower": "541 HP",
+      "torque": "567 lb-ft"
+    }
+  },
+  {
+    "id": 39,
+    "model": "Ghibli",
+    "make": "Maserati",
+    "year": 2020,
+    "transmission": "Automatic",
+    "category": "Sedan",
+    "country_of_origin": "Italy",
+    "city": "Turin",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "4.0L V8",
+      "horsepower": "541 HP",
+      "torque": "567 lb-ft"
+    }
+  },
+  {
+    "id": 40,
+    "model": "Cayenne",
+    "make": "Porsche",
+    "year": 2019,
+    "transmission": "Automatic",
+    "category": "SUV",
+    "country_of_origin": "Germany",
+    "city": "Cologne",
+    "price_range": "> $70k",
+    "fuel_type": "Petrol",
+    "details": {
+      "engine": "4.0L V8",
+      "horsepower": "541 HP",
+      "torque": "567 lb-ft"
+    }
+  }
+]
