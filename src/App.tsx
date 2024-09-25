@@ -12,7 +12,7 @@ interface Car {
   transmission: string;
   category: string;
   country_of_origin: string;
-  city?: string; // Optional
+  city?: string;
   price_range: string;
   fuel_type: string;
   details?: {
@@ -59,7 +59,7 @@ const App: React.FC = () => {
   const filterData = (make: string, transmission: string) => {
     const newData = retrieveData(make, transmission);
     setData(newData);
-    setCurrentPage(1); // Reset to first page after filtering
+    setCurrentPage(1);
   };
 
   const handleMakeChange = (value: string) => {
@@ -89,7 +89,6 @@ const App: React.FC = () => {
         const valueA = a[key];
         const valueB = b[key];
 
-        // Use string comparison for all string-based keys
         if (String(valueA) < String(valueB)) {
           return direction === 'ascending' ? -1 : 1;
         }
@@ -102,7 +101,7 @@ const App: React.FC = () => {
 
     setData(sortedData);
     setSortConfig({ key, direction });
-    setCurrentPage(1); // Reset to first page after sorting
+    setCurrentPage(1); 
   };
 
   const goToNextPage = () => {

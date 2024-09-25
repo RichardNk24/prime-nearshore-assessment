@@ -23,7 +23,7 @@ interface Car {
 interface TableProps {
     data: Car[];
     sortConfig?: { key: keyof Car; direction: 'ascending' | 'descending' } | null;
-    onSort: (key: keyof Car) => void; // Fix the type here
+    onSort: (key: keyof Car) => void;
     styleType: string;
   }
 
